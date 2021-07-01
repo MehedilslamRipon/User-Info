@@ -15,7 +15,7 @@ const UserDetails = () => {
 
    const { id, name, username, email, phone, website } = user;
 
-   console.log(user);
+   // console.log(user);
 
    return (
       <div className="user-container">
@@ -46,6 +46,7 @@ const UserDetails = () => {
          </p>
          <p>
             <b>Company:</b> {user?.company?.name}
+            {/* <b>Company:</b> {user.company ? name : undefined} */}
          </p>
 
          <button style={{ marginTop: '20px' }} className="btn">
