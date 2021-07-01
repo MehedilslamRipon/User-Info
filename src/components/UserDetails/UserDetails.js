@@ -15,7 +15,7 @@ const UserDetails = () => {
 
    const { id, name, username, email, phone, website } = user;
 
-   // console.log(user);
+   console.log(user);
 
    return (
       <div className="user-container">
@@ -38,8 +38,15 @@ const UserDetails = () => {
          <p>
             <b>Website:</b> {website}
          </p>
-         {/* <p> Address: {user.address.city} </p>
-         <p>Company: {user.company.name} </p> */}
+         <p>
+            <b>Address:</b> {user?.address?.city}
+         </p>
+         <p>
+            <b>ZipCode:</b> {user?.address?.zipcode}
+         </p>
+         <p>
+            <b>Company:</b> {user?.company?.name}
+         </p>
 
          <button style={{ marginTop: '20px' }} className="btn">
             <Link
